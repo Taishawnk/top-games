@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require_relative "../lib/environment"
 
 require "bundler/setup"
 require "top/games"
@@ -12,3 +13,4 @@ require "top/games"
 
 require "irb"
 IRB.start(__FILE__)
+CLI.new.Start
